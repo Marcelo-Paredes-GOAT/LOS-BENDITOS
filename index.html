@@ -3,109 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo de Construcción de Software - LOS BENDITOS</title>
-    <style>
-        /* Estilos muy básicos para la V1 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-        }
-        h1 { margin: 0; }
-        
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px 0;
-        }
-
-        /* Sección del equipo */
-        .grid-equipo {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-        }
-        .integrante {
-            border: 1px solid #ddd;
-            background: white;
-            border-radius: 8px;
-            width: 200px;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .integrante img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%; /* Imagenes redondas */
-            border: 3px solid #eee;
-        }
-        .integrante-nombre {
-            font-weight: bold;
-            margin-top: 10px;
-            color: #555;
-        }
-
-        footer {
-            margin-top: 40px;
-            background-color: #ddd;
-            padding: 20px;
-            color: #333;
-            font-size: 0.9em;
-        }
-        footer p { margin: 5px 0; }
-    </style>
+    <title>Los Benditos | Versión 2 - Dark Tech</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>LOS BENDITOS</h1>
+    <header class="hero-section">
+        <h1 class="glitch-title">LOS BENDITOS</h1>
+        <p class="group-desc">
+            Construcción de Software • Grupo de Ingeniería de Sistemas<br>
+            Transformando café en código fuente limpio y sin (muchos) bugs.
+        </p>
     </header>
 
-    <div class="container">
-        <h2>Nuestro Equipo de Desarrollo</h2>
+    <main class="team-container">
         
-        <div class="grid-equipo">
-            
-            <div class="integrante">
-                <img src="/imagenes/Marcelo.jpeg" alt="Foto de Integrante 1">
-                <div class="integrante-nombre">Marcelo</div>
+        <article class="member-card">
+            <div class="avatar-container">
+                <img src="imagenes/Marcelo.jpeg" alt="Foto de Marcelo" class="avatar-img">
             </div>
+            <h3>Marcelo</h3>
+            <span class="role-badge">Arquitecto de Software</span>
+            <p>Diseña la estructura antes de que el resto empiece a teclear.</p>
+        </article>
 
-            <div class="integrante">
-                <img src="imagenes/Manuel.jpeg" alt="Foto de Integrante 2">
-                <div class="integrante-nombre">Manuel</div>
+        <article class="member-card">
+            <div class="avatar-container">
+                <img src="imagenes/Manuel.jpeg" alt="Foto de Manuel" class="avatar-img">
             </div>
+            <h3>Manuel</h3>
+            <span class="role-badge">Backend Dev</span>
+            <p>El terror de los servidores. Su lógica de negocio es impecable.</p>
+        </article>
 
-            <div class="integrante">
-                <img src="imagenes/Sebastian.jpeg" alt="Foto de Integrante 3">
-                <div class="integrante-nombre">Sebastian</div>
+        <article class="member-card">
+            <div class="avatar-container">
+                <img src="imagenes/Sebastian.jpeg" alt="Foto de Sebastian" class="avatar-img">
             </div>
+            <h3>Sebastian</h3>
+            <span class="role-badge">Frontend Dev</span>
+            <p>Si el usuario no lo entiende, él lo rediseña. Master de CSS.</p>
+        </article>
 
-            <div class="integrante">
-                <img src="imagenes/Joel.jpg" alt="Foto de Integrante 4">
-                <div class="integrante-nombre">Joel</div>
+        <article class="member-card">
+            <div class="avatar-container">
+                <img src="imagenes/Joel.jpg" alt="Foto de Joel" class="avatar-img">
             </div>
+            <h3>Joel</h3>
+            <span class="role-badge">Database Admin</span>
+            <p>Guardián de los datos. Hace consultas SQL que parecen magia negra.</p>
+        </article>
 
-            <div class="integrante">
-                <img src="imagenes/Antoni.jpeg" alt="Foto de Integrante 4">
-                <div class="integrante-nombre">Antoni </div>
+        <article class="member-card">
+            <div class="avatar-container">
+                <img src="imagenes/Antoni.jpeg" alt="Foto de Antoni" class="avatar-img">
             </div>
+            <h3>Antoni</h3>
+            <span class="role-badge">DevOps & QA</span>
+            <p>Se asegura de que lo que funciona en local, funcione en producción.</p>
+        </article>
+        
 
-        </div>
-    </div>
+    </main>
 
     <footer>
-        <p>Grupo de Ingeniería de Sistemas</p>
-        <p>Curso: Construcción de Software</p>
+        <p>&copy; 2026 - Los Benditos. Todos los derechos reservados (y los bugs también).</p>
     </footer>
 
 </body>
