@@ -1,0 +1,145 @@
+/* Importar una fuente moderna de Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #ffffff;
+    /* Animación de fondo elegante */
+    background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #222831);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header y Navegación */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #4facfe;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4facfe;
+}
+
+/* Contenedor Principal */
+.container {
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+/* Grid del Equipo */
+.grid-equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Tarjetas de Integrantes */
+.integrante {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    width: 220px;
+    padding: 25px 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.integrante:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px 0 rgba(79, 172, 254, 0.3);
+}
+
+.integrante img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #4facfe;
+    margin-bottom: 15px;
+}
+
+.integrante-nombre {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.btn-perfil {
+    display: inline-block;
+    padding: 8px 20px;
+    background: transparent;
+    border: 1px solid #4facfe;
+    color: #4facfe;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: all 0.3s;
+}
+
+.btn-perfil:hover {
+    background: #4facfe;
+    color: #fff;
+}
+
+/* Footer Profesional */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.quote-sistemas {
+    font-style: italic;
+    color: #4facfe;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}

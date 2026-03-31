@@ -3,109 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo de Construcción de Software - LOS BENDITOS</title>
-    <style>
-        /* Estilos muy básicos para la V1 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-        }
-        h1 { margin: 0; }
-        
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px 0;
-        }
-
-        /* Sección del equipo */
-        .grid-equipo {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-        }
-        .integrante {
-            border: 1px solid #ddd;
-            background: white;
-            border-radius: 8px;
-            width: 200px;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .integrante img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%; /* Imagenes redondas */
-            border: 3px solid #eee;
-        }
-        .integrante-nombre {
-            font-weight: bold;
-            margin-top: 10px;
-            color: #555;
-        }
-
-        footer {
-            margin-top: 40px;
-            background-color: #ddd;
-            padding: 20px;
-            color: #333;
-            font-size: 0.9em;
-        }
-        footer p { margin: 5px 0; }
-    </style>
+    <title>LOS BENDITOS - Construcción de Software</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <h1>LOS BENDITOS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/marcelo.html">Marcelo</a></li>
+                </ul>
+        </nav>
     </header>
 
     <div class="container">
-        <h2>Nuestro Equipo de Desarrollo</h2>
+        <h2>Ingeniería en Construcción de Software</h2>
         
         <div class="grid-equipo">
             
             <div class="integrante">
-                <img src="/imagenes/Marcelo.jpeg" alt="Foto de Integrante 1">
+                <img src="imagenes/Marcelo.jpeg" alt="Marcelo">
                 <div class="integrante-nombre">Marcelo</div>
+                <a href="pages/marcelo.html" class="btn-perfil">Ver Perfil</a>
             </div>
 
             <div class="integrante">
-                <img src="imagenes/Manuel.jpeg" alt="Foto de Integrante 2">
+                <img src="imagenes/Manuel.jpeg" alt="Manuel">
                 <div class="integrante-nombre">Manuel</div>
+                <a href="pages/manuel.html" class="btn-perfil">Ver Perfil</a>
             </div>
 
             <div class="integrante">
-                <img src="imagenes/Sebastian.jpeg" alt="Foto de Integrante 3">
+                <img src="imagenes/Sebastian.jpeg" alt="Sebastian">
                 <div class="integrante-nombre">Sebastian</div>
+                <a href="pages/sebastian.html" class="btn-perfil">Ver Perfil</a>
             </div>
 
             <div class="integrante">
-                <img src="imagenes/Joel.jpg" alt="Foto de Integrante 4">
+                <img src="imagenes/Joel.jpg" alt="Joel">
                 <div class="integrante-nombre">Joel</div>
+                <a href="pages/joel.html" class="btn-perfil">Ver Perfil</a>
             </div>
 
             <div class="integrante">
-                <img src="imagenes/Antoni.jpeg" alt="Foto de Integrante 4">
-                <div class="integrante-nombre">Antoni </div>
+                <img src="imagenes/Antoni.jpeg" alt="Antoni">
+                <div class="integrante-nombre">Antoni</div>
+                <a href="pages/antoni.html" class="btn-perfil">Ver Perfil</a>
             </div>
 
         </div>
     </div>
 
     <footer>
-        <p>Grupo de Ingeniería de Sistemas</p>
-        <p>Curso: Construcción de Software</p>
+        <p class="quote-sistemas">"Benditos sean los programadores, porque de ellos será el reino del código limpio y sin bugs."</p>
+        <p>Grupo de Ingeniería de Sistemas | Curso: Construcción de Software</p>
     </footer>
 
 </body>
